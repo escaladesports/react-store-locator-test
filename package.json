@@ -1,0 +1,42 @@
+{
+  "name": "react-store-locator-test",
+  "version": "2.2.5",
+  "keywords": [
+    "react",
+    "component",
+    "boilerplate"
+  ],
+  "main": "dist/index.js",
+  "author": "Kennedy Rose <krose@escaladesports.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/escaladesports/react-store-locator-test.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "esca-scripts build",
+    "bundle": "esca-scripts bundle --src src/inject.js --dist dist-bundle",
+    "dev": "esca-scripts dev",
+    "prepublishOnly": "npm run build",
+    "reset": "esca-scripts reset",
+    "serve": "esca-scripts serve --src dist-bundle",
+    "test": "npm run bundle && esca-scripts test",
+    "travis": "opn https://travis-ci.org/escaladesports/react-store-locator-test/branches"
+  },
+  "devDependencies": {
+    "esca-scripts": "^1.2.0",
+    "fs-extra": "^6.0.0",
+    "get-port": "^3.2.0",
+    "opn-cli": "^3.1.0",
+    "puppeteer": "^1.4.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "static-server": "^2.2.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "react-icons": "^2.2.7",
+    "react-store-locator": "^0.10.0",
+    "styled-jsx": "^2.2.6"
+  }
+}
